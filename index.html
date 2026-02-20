@@ -7,74 +7,62 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header>
+    <h1>Student Finance Tracker</h1>
+    <nav>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#records">Records</a>
+      <a href="#add">Add Transaction</a>
+      <a href="#settings">Settings</a>
+    </nav>
+  </header>
 
-<a href="#main" class="skip-link">Skip to content</a>
+  <main id="main">
+    <section id="about">
+      <h2>About</h2>
+      <p>Track your student expenses. Contact: <a href="https://github.com/yourname">GitHub</a></p>
+    </section>
 
-<header>
-  <h1>Student Finance Tracker</h1>
-  <nav>
-    <a href="#dashboard">Dashboard</a>
-    <a href="#records">Records</a>
-    <a href="#add">Add</a>
-  </nav>
-</header>
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <div id="stats">
+        <p>Total Records: <span id="totalRecords">0</span></p>
+        <p>Total Amount: <span id="totalAmount">0.00</span></p>
+        <p>Top Category: <span id="topCategory">-</span></p>
+      </div>
+      <div aria-live="polite" id="capMessage"></div>
+    </section>
 
-<main id="main">
+    <section id="records">
+      <h2>Records</h2>
+      <input type="text" id="search" placeholder="Search..." aria-label="Search transactions">
+      <table id="recordsTable"></table>
+    </section>
 
-<section id="dashboard">
-  <h2>Dashboard</h2>
-  <div id="stats"></div>
-  <div id="capStatus" aria-live="polite"></div>
-</section>
+    <section id="add">
+      <h2>Add Transaction</h2>
+      <form id="recordForm">
+        <label>Description <input type="text" id="description" required></label>
+        <label>Amount <input type="number" id="amount" step="0.01" required></label>
+        <label>Category <input type="text" id="category" required></label>
+        <label>Date <input type="date" id="date" required></label>
+        <button type="submit">Save</button>
+      </form>
+    </section>
 
-<section id="records">
-  <h2>Records</h2>
+    <section id="settings">
+      <h2>Settings</h2>
+      <button id="importBtn">Import JSON</button>
+      <button id="exportBtn">Export JSON</button>
+      <input type="file" id="importFile" accept=".json" style="display:none">
+    </section>
+  </main>
 
-  <input type="text" id="searchInput" placeholder="Regex search...">
+  <footer>
+    <p>&copy; 2026 Student Finance Tracker</p>
+  </footer>
 
-  <table id="recordsTable">
-    <thead>
-      <tr>
-        <th data-sort="description">Description</th>
-        <th data-sort="amount">Amount</th>
-        <th data-sort="category">Category</th>
-        <th data-sort="date">Date</th>
-        <th>Delete</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</section>
-
-<section id="add">
-  <h2>Add Transaction</h2>
-  <form id="recordForm">
-    <label>Description
-      <input type="text" id="description" required>
-    </label>
-
-    <label>Amount
-      <input type="text" id="amount" required>
-    </label>
-
-    <label>Category
-      <input type="text" id="category" required>
-    </label>
-
-    <label>Date
-      <input type="date" id="date" required>
-    </label>
-
-    <button type="submit">Save</button>
-  </form>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2026 Student Finance Tracker</p>
-</footer>
-
-<script src="scripts/app.js"></script>
+  <script src="scripts/app.js" type="module"></script>
 </body>
 </html>

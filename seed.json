@@ -1,6 +1,12 @@
 [
-  {"id":"rec_1","description":"Lunch","amount":12.50,"category":"Food","date":"2025-09-25","createdAt":"2025-09-25","updatedAt":"2025-09-25"},
-  {"id":"rec_2","description":"Bus pass","amount":45.00,"category":"Transport","date":"2025-09-20","createdAt":"2025-09-20","updatedAt":"2025-09-20"},
-  {"id":"rec_3","description":"Coffee coffee","amount":4.25,"category":"Food","date":"2025-09-18","createdAt":"2025-09-18","updatedAt":"2025-09-18"},
-  {"id":"rec_4","description":"Textbook","amount":89.99,"category":"Books","date":"2025-09-15","createdAt":"2025-09-15","updatedAt":"2025-09-15"}
+  {"id":"rec_1","description":"Lunch @ Cafeteria","amount":12.50,"category":"Food","date":"2026-02-20"},
+  {"id":"rec_2","description":"Bus pass","amount":45.00,"category":"Transport","date":"2026-02-18"},
+  {"id":"rec_3","description":"Coffee with friends","amount":8.75,"category":"Entertainment","date":"2026-02-19"},
+  {"id":"rec_4","description":"Chemistry textbook","amount":89.99,"category":"Books","date":"2025-09-23"},
+  {"id":"rec_5","description":"Laptop repair","amount":250.00,"category":"Other","date":"2025-12-01"},
+  {"id":"rec_6","description":"Breakfast - @Cafe","amount":5.25,"category":"Food","date":"2026-01-15"},
+  {"id":"rec_7","description":"Movie night","amount":15.50,"category":"Entertainment","date":"2026-02-10"},
+  {"id":"rec_8","description":"Bus ticket duplicate bus","amount":7.00,"category":"Transport","date":"2026-02-05"},
+  {"id":"rec_9","description":"Gym membership","amount":120.00,"category":"Other","date":"2025-11-20"},
+  {"id":"rec_10","description":"Dinner at friends","amount":30.00,"category":"Food","date":"2026-02-01"}
 ]
