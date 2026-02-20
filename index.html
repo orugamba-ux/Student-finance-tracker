@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Finance Tracker</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>Student Finance Tracker</h1>
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#records">Records</a>
+    <a href="#add">Add</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section id="dashboard">
+  <h2>Dashboard</h2>
+  <div id="stats"></div>
+  <div id="capStatus" aria-live="polite"></div>
+</section>
+
+<section id="records">
+  <h2>Records</h2>
+
+  <input type="text" id="searchInput" placeholder="Regex search...">
+
+  <table id="recordsTable">
+    <thead>
+      <tr>
+        <th data-sort="description">Description</th>
+        <th data-sort="amount">Amount</th>
+        <th data-sort="category">Category</th>
+        <th data-sort="date">Date</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<section id="add">
+  <h2>Add Transaction</h2>
+  <form id="recordForm">
+    <label>Description
+      <input type="text" id="description" required>
+    </label>
+
+    <label>Amount
+      <input type="text" id="amount" required>
+    </label>
+
+    <label>Category
+      <input type="text" id="category" required>
+    </label>
+
+    <label>Date
+      <input type="date" id="date" required>
+    </label>
+
+    <button type="submit">Save</button>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Student Finance Tracker</p>
+</footer>
+
+<script src="scripts/app.js"></script>
+</body>
+</html>
