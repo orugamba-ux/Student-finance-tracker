@@ -2,7 +2,7 @@
 
 Theme: Student Finance Tracker – track your expenses, view totals, and manage a simple budget.
 
-*Live site: 
+*Live site: https://orugamba-ux.github.io/Student-finance-tracker/
 
 Repo: https://github.com/orugamba-ux/student-finance-tracker
 
